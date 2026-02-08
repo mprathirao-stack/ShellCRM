@@ -1,0 +1,6 @@
+station_id,name,address,lat,lon,borough
+st_001,Shell Paddington,"Paddington Basin, London",51.5194,-0.1750,Westminster
+st_002,Shell Kings Cross,"Kings Cross, London",51.5308,-0.1238,Camden
+st_003,Shell Canary Wharf,"Canary Wharf, London",51.5054,-0.0235,Tower Hamlets
+st_004,Shell Stratford,"Stratford, London",51.5413,-0.0032,Newham
+st_005,Shell Brixton,"Brixton, London",51.4613,-0.1146,Lambeth

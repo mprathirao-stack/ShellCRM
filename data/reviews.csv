@@ -1,0 +1,11 @@
+review_id,station_id,rating,review_text,review_date
+r_001,st_001,5,"Clean place and quick service.",2025-12-10
+r_002,st_001,2,"Long queue and staff were rude.",2026-01-05
+r_003,st_002,1,"Toilets were disgusting and no soap.",2026-01-18
+r_004,st_002,4,"Good coffee and friendly cashier.",2025-11-22
+r_005,st_003,3,"EV chargers present but one was broken.",2026-01-02
+r_006,st_003,2,"Too crowded at peak hours.",2026-01-20
+r_007,st_004,5,"Very clean and well maintained.",2026-01-15
+r_008,st_004,1,"Felt unsafe at night near the entrance.",2026-01-21
+r_009,st_005,4,"Car wash worked great.",2025-12-30
+r_010,st_005,2,"Pricing is high compared to others.",2026-01-12
