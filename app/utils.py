@@ -25,7 +25,15 @@ THEME_KEYWORDS = {
 
 @st.cache_resource
 def get_vader():
+    # Ensure VADER lexicon exists in the deployment environment (Streamlit Cloud)
+    import nltk
+    try:
+        nltk.data.find("sentiment/vader_lexicon.zip")
+    except LookupError:
+        nltk.download("vader_lexicon")
+
     return SentimentIntensityAnalyzer()
+
 
 def tag_themes(text: str) -> list[str]:
     if not isinstance(text, str) or not text.strip():
