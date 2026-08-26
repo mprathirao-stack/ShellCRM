@@ -151,6 +151,87 @@ def top_themes_from(df: pd.DataFrame, n: int = 6):
         all_t.extend(themes)
     return Counter(all_t).most_common(n)
 
+def theme_deltas(window_df: pd.DataFrame, prior_df: pd.DataFrame) -> pd.DataFrame:
+    """Compare theme mention counts between two periods (e.g. negative reviews now vs before)."""
+    def counts(df):
+        c = Counter()
+        for themes in df["themes"].tolist():
+            c.update(themes)
+        return c
+
+    cur = counts(window_df)
+    prev = counts(prior_df)
+    all_themes = set(cur) | set(prev)
+
+    rows = [
+        {"theme": t, "current": cur.get(t, 0), "prior": prev.get(t, 0), "delta": cur.get(t, 0) - prev.get(t, 0)}
+        for t in all_themes
+    ]
+    if not rows:
+        return pd.DataFrame(columns=["theme", "current", "prior", "delta"])
+    return pd.DataFrame(rows).sort_values("delta", ascending=False).reset_index(drop=True)
+
+
+def detect_spikes(
+    stations: pd.DataFrame,
+    reviews_enriched: pd.DataFrame,
+    max_date: pd.Timestamp,
+    spike_days: int = 30,
+    baseline_days: int = 180,
+    min_count: int = 3,
+    ratio_threshold: float = 2.0,
+) -> pd.DataFrame:
+    """
+    Flags stations with a sudden recent increase in negative reviews:
+    negative reviews in the last `spike_days` compared against the
+    per-`spike_days` negative review rate over the preceding `baseline_days`.
+    """
+    spike_start = max_date - pd.Timedelta(days=spike_days)
+    baseline_start = spike_start - pd.Timedelta(days=baseline_days)
+
+    neg = reviews_enriched[reviews_enriched["sentiment_label"] == "negative"]
+    spike_df = neg[neg["review_date"] > spike_start]
+    baseline_df = neg[(neg["review_date"] > baseline_start) & (neg["review_date"] <= spike_start)]
+
+    spike_counts = spike_df.groupby("station_id").size().rename("spike_neg_count")
+    baseline_counts = baseline_df.groupby("station_id").size().rename("baseline_neg_count")
+
+    combined = pd.concat([spike_counts, baseline_counts], axis=1).fillna(0).reset_index()
+    if combined.empty:
+        return pd.DataFrame(columns=["station_id", "name", "borough", "spike_neg_count", "baseline_neg_count", "ratio", "top_theme"])
+
+    windows_in_baseline = baseline_days / spike_days
+    combined["baseline_rate"] = combined["baseline_neg_count"] / windows_in_baseline
+
+    def ratio(row):
+        if row["baseline_rate"] > 0:
+            return row["spike_neg_count"] / row["baseline_rate"]
+        return float("inf") if row["spike_neg_count"] >= min_count else 0.0
+
+    combined["ratio"] = combined.apply(ratio, axis=1)
+
+    flagged = combined[
+        (combined["spike_neg_count"] >= min_count) & (combined["ratio"] >= ratio_threshold)
+    ].copy()
+
+    if flagged.empty:
+        return pd.DataFrame(columns=["station_id", "name", "borough", "spike_neg_count", "baseline_neg_count", "ratio", "top_theme"])
+
+    top_theme = {}
+    for sid in flagged["station_id"]:
+        themes = []
+        for t in spike_df.loc[spike_df["station_id"] == sid, "themes"]:
+            themes.extend(t)
+        top_theme[sid] = Counter(themes).most_common(1)[0][0] if themes else None
+    flagged["top_theme"] = flagged["station_id"].map(top_theme)
+
+    flagged = flagged.merge(stations[["station_id", "name", "borough"]], on="station_id", how="left")
+    flagged["spike_neg_count"] = flagged["spike_neg_count"].astype(int)
+    flagged["baseline_neg_count"] = flagged["baseline_neg_count"].astype(int)
+
+    return flagged.sort_values("ratio", ascending=False).reset_index(drop=True)
+
+
 def make_reviews_window(reviews_enriched: pd.DataFrame, window_days: int):
     """
     Returns (reviews_window, reviews_prior, cutoff, max_date).

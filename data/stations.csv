@@ -1,6 +1,19 @@
-station_id,name,address,lat,lon,borough
-st_001,Shell Paddington,"Paddington Basin, London",51.5194,-0.1750,Westminster
-st_002,Shell Kings Cross,"Kings Cross, London",51.5308,-0.1238,Camden
-st_003,Shell Canary Wharf,"Canary Wharf, London",51.5054,-0.0235,Tower Hamlets
-st_004,Shell Stratford,"Stratford, London",51.5413,-0.0032,Newham
-st_005,Shell Brixton,"Brixton, London",51.4613,-0.1146,Lambeth
+station_id,name,address,lat,lon,borough,region
+st_001,Shell Paddington,"Paddington Basin, London",51.5194,-0.175,Westminster,Central
+st_002,Shell Kings Cross,"Kings Cross, London",51.5308,-0.1238,Camden,Central
+st_003,Shell Barbican,"Barbican, London",51.5203,-0.0958,City of London,Central
+st_004,Shell Angel,"Angel, London",51.5322,-0.1058,Islington,Central
+st_005,Shell Earls Court,"Earls Court, London",51.4913,-0.1937,Kensington and Chelsea,Central
+st_006,Shell Elephant and Castle,"Elephant and Castle, London",51.4943,-0.1001,Southwark,Central
+st_007,Shell Canary Wharf,"Canary Wharf, London",51.5054,-0.0235,Tower Hamlets,East
+st_008,Shell Stratford,"Stratford, London",51.5413,-0.0032,Newham,East
+st_009,Shell Dalston,"Dalston, London",51.5465,-0.0754,Hackney,East
+st_010,Shell Woolwich,"Woolwich, London",51.4903,0.0648,Greenwich,East
+st_011,Shell Ilford,"Ilford, London",51.559,0.0741,Redbridge,East
+st_012,Shell Barking,"Barking, London",51.5397,0.0805,Barking and Dagenham,East
+st_013,Shell Ealing Broadway,"Ealing Broadway, London",51.5152,-0.3019,Ealing,West
+st_014,Shell Hounslow,"Hounslow, London",51.4746,-0.368,Hounslow,West
+st_015,Shell Hammersmith,"Hammersmith, London",51.4927,-0.2229,Hammersmith and Fulham,West
+st_016,Shell Wembley,"Wembley, London",51.552,-0.296,Brent,West
+st_017,Shell Brixton,"Brixton, London",51.4613,-0.1146,Lambeth,West
+st_018,Shell Richmond,"Richmond, London",51.4613,-0.3037,Richmond upon Thames,West

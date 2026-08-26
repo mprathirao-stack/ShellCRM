@@ -1,11 +1,575 @@
 review_id,station_id,rating,review_text,review_date
-r_001,st_001,5,"Clean place and quick service.",2025-12-10
-r_002,st_001,2,"Long queue and staff were rude.",2026-01-05
-r_003,st_002,1,"Toilets were disgusting and no soap.",2026-01-18
-r_004,st_002,4,"Good coffee and friendly cashier.",2025-11-22
-r_005,st_003,3,"EV chargers present but one was broken.",2026-01-02
-r_006,st_003,2,"Too crowded at peak hours.",2026-01-20
-r_007,st_004,5,"Very clean and well maintained.",2026-01-15
-r_008,st_004,1,"Felt unsafe at night near the entrance.",2026-01-21
-r_009,st_005,4,"Car wash worked great.",2025-12-30
-r_010,st_005,2,"Pricing is high compared to others.",2026-01-12
+r_001_025,st_001,5,Loo was clean and well maintained.,2024-09-12
+r_001_045,st_001,5,"Convenient and reliable, always a good stop. Great Shell station overall, would recommend.",2024-10-09
+r_001_003,st_001,3,"Nothing remarkable either way, just a normal fuel stop.",2024-10-23
+r_001_014,st_001,5,"Good value, not overpriced at all.",2024-10-30
+r_001_012,st_001,5,"Toilets were clean with soap and paper available. Great Shell station overall, would recommend.",2024-11-02
+r_001_001,st_001,5,"One of the better fuel stops in London. Great Shell station overall, would recommend.",2024-11-03
+r_001_007,st_001,4,One of the better fuel stops in London.,2024-11-14
+r_001_017,st_001,1,Forecourt was filthy and messy with rubbish everywhere.,2024-12-17
+r_001_015,st_001,5,"Served straight away, no queue at the till. Great Shell station overall, would recommend.",2024-12-30
+r_001_036,st_001,5,"Good value, not overpriced at all. Great Shell station overall, would recommend.",2025-01-27
+r_001_002,st_001,5,"The forecourt was spotless and well maintained. Great Shell station overall, would recommend.",2025-02-07
+r_001_044,st_001,3,"Nothing remarkable either way, just a normal fuel stop.",2025-02-09
+r_001_037,st_001,5,"Always tidy, staff clearly keep on top of cleaning.",2025-02-10
+r_001_033,st_001,3,It's fine for a quick stop.,2025-02-12
+r_001_011,st_001,4,"Standard Shell station, does the job.",2025-02-19
+r_001_020,st_001,1,Won't be coming back to this station.,2025-03-18
+r_001_034,st_001,5,"Great Shell station overall, would recommend. Great Shell station overall, would recommend.",2025-04-09
+r_001_013,st_001,5,Bathroom was tidy and well stocked.,2025-07-05
+r_001_041,st_001,5,"Car wash machine worked great, highly recommend.",2025-07-10
+r_001_009,st_001,4,Bathroom was tidy and well stocked.,2025-07-26
+r_001_010,st_001,3,"Nothing remarkable either way, just a normal fuel stop.",2025-11-19
+r_001_018,st_001,3,"Okay experience overall, nothing to complain about.",2025-11-19
+r_001_035,st_001,2,Won't be coming back to this station.,2025-11-21
+r_001_032,st_001,3,"Average petrol station, nothing special.",2025-12-07
+r_001_026,st_001,4,"Reasonable prices for London. Great Shell station overall, would recommend.",2025-12-09
+r_001_039,st_001,4,One of the better fuel stops in London.,2025-12-22
+r_001_008,st_001,4,It's fine for a quick stop.,2025-12-29
+r_001_005,st_001,2,Attendant was rude when I asked a simple question. Won't be coming back to this station.,2026-01-11
+r_001_028,st_001,5,"Solid experience, will come back again. Solid experience, will come back again.",2026-01-12
+r_001_021,st_001,5,"Great Shell station overall, would recommend.",2026-01-28
+r_001_029,st_001,5,Loo was clean and well maintained.,2026-02-06
+r_001_024,st_001,5,"Solid experience, will come back again.",2026-03-03
+r_001_038,st_001,5,"No queue at all, in and out in minutes.",2026-03-11
+r_001_016,st_001,5,"Solid experience, will come back again.",2026-03-16
+r_001_043,st_001,1,Overall disappointing experience.,2026-04-06
+r_001_022,st_001,2,Won't be coming back to this station. Overall disappointing experience.,2026-04-27
+r_001_031,st_001,4,Jet wash was powerful and good value.,2026-04-30
+r_001_040,st_001,4,"Restroom was surprisingly clean for a petrol station. Convenient and reliable, always a good stop.",2026-05-28
+r_001_023,st_001,5,"The cashier was polite and quick. Solid experience, will come back again.",2026-05-31
+r_001_030,st_001,5,"Great Shell station overall, would recommend. Convenient and reliable, always a good stop.",2026-06-25
+r_001_006,st_001,3,"Average petrol station, nothing special.",2026-07-06
+r_001_027,st_001,3,"Standard Shell station, does the job.",2026-07-18
+r_001_042,st_001,5,"Great Shell station overall, would recommend. One of the better fuel stops in London.",2026-08-10
+r_001_004,st_001,3,"Standard Shell station, does the job.",2026-08-13
+r_001_019,st_001,2,Won't be coming back to this station.,2026-08-16
+r_002_004,st_002,5,Rapid charger was available and easy to use.,2024-12-11
+r_002_020,st_002,4,Bathroom was tidy and well stocked.,2025-03-15
+r_002_008,st_002,3,It's fine for a quick stop.,2025-03-18
+r_002_015,st_002,4,Toilets were clean with soap and paper available.,2025-03-20
+r_002_013,st_002,5,Toilets were clean with soap and paper available.,2025-04-06
+r_002_016,st_002,3,"Standard Shell station, does the job.",2025-04-11
+r_002_011,st_002,4,Restroom was surprisingly clean for a petrol station.,2025-05-12
+r_002_012,st_002,4,"Restroom was surprisingly clean for a petrol station. Solid experience, will come back again.",2025-05-30
+r_002_014,st_002,4,"Good security presence, felt safe.",2025-06-06
+r_002_002,st_002,2,"Toilets were disgusting, no soap or paper.",2025-06-09
+r_002_006,st_002,4,"Okay experience overall, nothing to complain about.",2025-06-11
+r_002_010,st_002,5,Loo was clean and well maintained.,2025-07-03
+r_002_024,st_002,5,Loo was clean and well maintained. One of the better fuel stops in London.,2025-07-12
+r_002_019,st_002,4,Bathroom was tidy and well stocked.,2025-07-18
+r_002_021,st_002,5,Fuel prices were fair compared to nearby stations.,2025-08-02
+r_002_022,st_002,2,It's fine for a quick stop.,2025-08-06
+r_002_017,st_002,4,Bathroom was tidy and well stocked.,2025-08-09
+r_002_001,st_002,5,"Restroom was surprisingly clean for a petrol station. Convenient and reliable, always a good stop.",2025-09-15
+r_002_007,st_002,1,Cashier was dismissive and unfriendly.,2025-09-16
+r_002_005,st_002,4,"No queue at all, in and out in minutes.",2025-09-23
+r_002_025,st_002,5,Restroom was surprisingly clean for a petrol station.,2025-10-20
+r_002_009,st_002,4,"Reasonable prices for London. Solid experience, will come back again.",2025-11-03
+r_002_003,st_002,5,"Restroom was surprisingly clean for a petrol station. Solid experience, will come back again.",2026-01-07
+r_002_023,st_002,3,"Average petrol station, nothing special.",2026-02-16
+r_002_018,st_002,5,"Car wash machine worked great, highly recommend.",2026-02-21
+r_002_032,st_002,2,"Felt scared walking to my car, no security around.",2026-02-22
+r_002_040,st_002,2,Bathroom was filthy and out of order. Would not recommend this Shell station.,2026-03-06
+r_002_028,st_002,2,Way too expensive compared to other stations nearby. Would not recommend this Shell station.,2026-03-09
+r_002_026,st_002,3,"Nothing remarkable either way, just a normal fuel stop.",2026-03-16
+r_002_045,st_002,3,"Average petrol station, nothing special.",2026-03-19
+r_002_050,st_002,1,"Car wash was broken and out of order. Below average, expected better.",2026-03-21
+r_002_034,st_002,3,It's fine for a quick stop.,2026-04-02
+r_002_035,st_002,2,Loo was locked and the one time open it was gross.,2026-04-17
+r_002_031,st_002,2,Loo was locked and the one time open it was gross.,2026-04-22
+r_002_048,st_002,4,"Nothing remarkable either way, just a normal fuel stop.",2026-04-24
+r_002_046,st_002,2,"Standard Shell station, does the job.",2026-05-02
+r_002_047,st_002,3,"Standard Shell station, does the job.",2026-05-04
+r_002_044,st_002,2,"Store was dirty, sticky floors and a bad smell. Won't be coming back to this station.",2026-05-15
+r_002_042,st_002,1,"Toilets were disgusting, no soap or paper.",2026-05-17
+r_002_043,st_002,2,Restroom smelled awful and was not maintained.,2026-06-01
+r_002_033,st_002,3,"Okay experience overall, nothing to complain about.",2026-06-04
+r_002_049,st_002,2,Paid for a wash that didn't even start.,2026-06-11
+r_002_041,st_002,1,Witnessed some threatening behaviour near the pumps.,2026-06-19
+r_002_029,st_002,1,"Toilets were disgusting, no soap or paper. Overall disappointing experience.",2026-06-20
+r_002_038,st_002,1,"Loo was locked and the one time open it was gross. Below average, expected better.",2026-06-26
+r_002_027,st_002,3,"Standard Shell station, does the job.",2026-07-10
+r_002_030,st_002,3,"Okay experience overall, nothing to complain about.",2026-07-11
+r_002_036,st_002,5,Loo was clean and well maintained.,2026-07-18
+r_002_037,st_002,1,Loo was locked and the one time open it was gross. Won't be coming back to this station.,2026-07-29
+r_002_039,st_002,2,"Poor hygiene, definitely needs a proper clean. Would not recommend this Shell station.",2026-07-30
+r_003_010,st_003,2,Car wash was broken and out of order.,2024-09-04
+r_003_027,st_003,1,Would not recommend this Shell station.,2024-10-10
+r_003_020,st_003,5,"No queue at all, in and out in minutes. Convenient and reliable, always a good stop.",2024-10-25
+r_003_023,st_003,5,Loved how clean and fresh everything smelled inside.,2024-12-09
+r_003_018,st_003,3,"Standard Shell station, does the job.",2024-12-19
+r_003_008,st_003,1,"Felt unsafe at night, poor lighting and loitering.",2024-12-24
+r_003_021,st_003,2,Car wash machine jammed halfway through.,2025-01-14
+r_003_006,st_003,4,"Convenient and reliable, always a good stop.",2025-02-02
+r_003_030,st_003,5,Car wash left my car spotless. One of the better fuel stops in London.,2025-02-03
+r_003_003,st_003,1,"Both chargers were broken, wasted a trip.",2025-03-08
+r_003_022,st_003,3,"Okay experience overall, nothing to complain about.",2025-03-25
+r_003_012,st_003,5,Car wash left my car spotless.,2025-04-17
+r_003_004,st_003,3,"Average petrol station, nothing special.",2025-04-19
+r_003_011,st_003,4,"Standard Shell station, does the job.",2025-04-26
+r_003_001,st_003,3,"Average petrol station, nothing special.",2025-05-01
+r_003_019,st_003,5,"Good security presence, felt safe.",2025-05-12
+r_003_025,st_003,3,"Okay experience overall, nothing to complain about.",2025-05-30
+r_003_014,st_003,3,It's fine for a quick stop.,2025-06-19
+r_003_029,st_003,4,Vacuum and car wash both worked well.,2025-06-22
+r_003_005,st_003,1,Loo was locked and the one time open it was gross.,2025-07-01
+r_003_015,st_003,3,"Standard Shell station, does the job.",2025-07-26
+r_003_009,st_003,5,"Line moved fast, no waiting around. Great Shell station overall, would recommend.",2025-08-15
+r_003_026,st_003,5,"Line moved fast, no waiting around.",2025-09-12
+r_003_002,st_003,5,"Never felt unsafe, well-lit forecourt even late at night. Convenient and reliable, always a good stop.",2025-09-21
+r_003_028,st_003,5,"Great Shell station overall, would recommend.",2025-09-22
+r_003_017,st_003,1,"Massive queue, waited over 15 minutes to pay. Below average, expected better.",2025-11-22
+r_003_007,st_003,4,"One of the better fuel stops in London. Solid experience, will come back again.",2026-02-03
+r_003_024,st_003,4,It's fine for a quick stop.,2026-02-21
+r_003_013,st_003,4,"Felt very safe filling up here, well lit at night.",2026-03-17
+r_003_016,st_003,3,It's fine for a quick stop.,2026-06-19
+r_004_011,st_004,5,The cashier was polite and quick.,2024-09-01
+r_004_004,st_004,3,"Average petrol station, nothing special.",2024-09-19
+r_004_010,st_004,5,Staff were incredibly friendly and helpful.,2024-09-25
+r_004_006,st_004,5,"Really helpful staff, went out of their way to assist.",2024-10-08
+r_004_014,st_004,5,"Staff were incredibly friendly and helpful. Convenient and reliable, always a good stop.",2024-10-10
+r_004_005,st_004,2,Fuel prices are a total rip off here. Won't be coming back to this station.,2024-12-24
+r_004_017,st_004,2,"Extremely slow service, long line at the till. Below average, expected better.",2024-12-27
+r_004_008,st_004,2,"Poor hygiene, definitely needs a proper clean.",2025-01-25
+r_004_009,st_004,1,"Jet wash barely worked, waste of money.",2025-01-27
+r_004_007,st_004,1,Cashier was dismissive and unfriendly.,2025-01-31
+r_004_001,st_004,1,Staff were rude and unhelpful. Would not recommend this Shell station.,2025-04-09
+r_004_003,st_004,1,Attendant was rude when I asked a simple question. Overall disappointing experience.,2025-05-18
+r_004_019,st_004,3,"Standard Shell station, does the job.",2025-06-05
+r_004_018,st_004,1,Cashier was dismissive and unfriendly.,2025-06-20
+r_004_020,st_004,1,Restroom smelled awful and was not maintained.,2025-09-13
+r_004_012,st_004,1,Overpriced for what you get.,2025-09-16
+r_004_002,st_004,3,"Standard Shell station, does the job.",2025-10-24
+r_004_015,st_004,2,Staff were rude and unhelpful.,2025-11-21
+r_004_013,st_004,5,Vacuum and car wash both worked well.,2025-12-01
+r_004_016,st_004,1,Overpriced for what you get.,2026-01-23
+r_004_037,st_004,2,Cashier was dismissive and unfriendly.,2026-02-22
+r_004_032,st_004,3,"Okay experience overall, nothing to complain about.",2026-02-28
+r_004_026,st_004,4,Loved how clean and fresh everything smelled inside.,2026-03-07
+r_004_023,st_004,3,"Nothing remarkable either way, just a normal fuel stop.",2026-03-28
+r_004_036,st_004,5,The cashier was polite and quick.,2026-04-15
+r_004_038,st_004,4,Fuel prices were fair compared to nearby stations.,2026-04-16
+r_004_039,st_004,2,"Poor hygiene, definitely needs a proper clean.",2026-04-28
+r_004_022,st_004,4,"Great to see working EV charging points here. Solid experience, will come back again.",2026-05-14
+r_004_033,st_004,5,Staff were incredibly friendly and helpful.,2026-05-16
+r_004_031,st_004,5,Great customer service from the attendant on duty.,2026-05-18
+r_004_040,st_004,5,Staff were incredibly friendly and helpful.,2026-05-20
+r_004_034,st_004,1,Staff were rude and unhelpful.,2026-05-28
+r_004_035,st_004,4,Staff were incredibly friendly and helpful.,2026-06-03
+r_004_027,st_004,5,"The cashier was polite and quick. Convenient and reliable, always a good stop.",2026-06-05
+r_004_029,st_004,3,"Average petrol station, nothing special.",2026-06-05
+r_004_024,st_004,3,"Standard Shell station, does the job.",2026-06-07
+r_004_028,st_004,4,"Okay experience overall, nothing to complain about.",2026-06-11
+r_004_021,st_004,4,"Really helpful staff, went out of their way to assist.",2026-06-16
+r_004_025,st_004,5,Rapid charger was available and easy to use.,2026-07-02
+r_004_030,st_004,5,Vacuum and car wash both worked well.,2026-07-31
+r_005_011,st_005,3,"Okay experience overall, nothing to complain about.",2025-11-12
+r_005_008,st_005,5,"Great Shell station overall, would recommend. Solid experience, will come back again.",2025-11-26
+r_005_012,st_005,5,One of the better fuel stops in London.,2026-01-11
+r_005_009,st_005,4,"Average petrol station, nothing special.",2026-01-13
+r_005_006,st_005,3,"Okay experience overall, nothing to complain about.",2026-01-16
+r_005_007,st_005,2,"Nothing remarkable either way, just a normal fuel stop.",2026-02-15
+r_005_010,st_005,3,"Nothing remarkable either way, just a normal fuel stop.",2026-03-08
+r_005_003,st_005,4,Loved how clean and fresh everything smelled inside.,2026-04-22
+r_005_004,st_005,3,"Average petrol station, nothing special.",2026-06-14
+r_005_001,st_005,4,"Nothing remarkable either way, just a normal fuel stop.",2026-07-04
+r_005_002,st_005,2,"Extremely slow service, long line at the till. Overall disappointing experience.",2026-07-25
+r_005_005,st_005,4,"Good value, not overpriced at all. Convenient and reliable, always a good stop.",2026-08-06
+r_006_009,st_006,1,Overpriced for what you get.,2024-09-08
+r_006_015,st_006,2,"Standard Shell station, does the job.",2024-09-24
+r_006_005,st_006,5,Fuel prices were fair compared to nearby stations.,2024-10-07
+r_006_025,st_006,2,"Both chargers were broken, wasted a trip.",2024-10-17
+r_006_031,st_006,1,Bathroom was filthy and out of order.,2024-10-21
+r_006_024,st_006,5,Reasonable prices for London. One of the better fuel stops in London.,2024-10-28
+r_006_022,st_006,1,Overpriced for what you get.,2024-12-24
+r_006_026,st_006,2,Restroom smelled awful and was not maintained.,2025-01-03
+r_006_020,st_006,1,"Prices keep climbing, feels like a ripoff now. Below average, expected better.",2025-01-07
+r_006_012,st_006,3,It's fine for a quick stop.,2025-01-15
+r_006_004,st_006,1,Restroom smelled awful and was not maintained.,2025-01-27
+r_006_011,st_006,2,Overpriced for what you get. Won't be coming back to this station.,2025-02-22
+r_006_033,st_006,1,Overpriced for what you get.,2025-03-01
+r_006_003,st_006,2,Bins overflowing and the whole place felt grimy. Won't be coming back to this station.,2025-04-21
+r_006_014,st_006,1,Fuel prices are a total rip off here.,2025-05-24
+r_006_018,st_006,2,Way too expensive compared to other stations nearby.,2025-06-05
+r_006_008,st_006,5,Car wash left my car spotless.,2025-06-06
+r_006_001,st_006,1,"Prices keep climbing, feels like a ripoff now.",2025-06-22
+r_006_016,st_006,4,Reasonable prices for London.,2025-07-11
+r_006_030,st_006,2,Fuel prices are a total rip off here.,2025-07-22
+r_006_019,st_006,2,Bins overflowing and the whole place felt grimy. Would not recommend this Shell station.,2025-08-22
+r_006_006,st_006,1,Way too expensive compared to other stations nearby.,2025-08-24
+r_006_028,st_006,2,"Prices keep climbing, feels like a ripoff now. Won't be coming back to this station.",2025-08-24
+r_006_032,st_006,5,"Reasonable prices for London. Solid experience, will come back again.",2025-09-02
+r_006_034,st_006,2,"Standard Shell station, does the job.",2025-09-07
+r_006_021,st_006,1,Security is a concern here after dark. Would not recommend this Shell station.,2025-09-21
+r_006_002,st_006,3,It's fine for a quick stop.,2025-10-03
+r_006_010,st_006,4,"Prices are competitive for the area. Great Shell station overall, would recommend.",2026-02-15
+r_006_023,st_006,1,Bathroom was filthy and out of order.,2026-02-28
+r_006_027,st_006,2,Overpriced for what you get.,2026-03-18
+r_006_017,st_006,2,"Average petrol station, nothing special.",2026-04-01
+r_006_007,st_006,2,Fuel prices are a total rip off here.,2026-05-01
+r_006_035,st_006,3,"Standard Shell station, does the job.",2026-05-15
+r_006_029,st_006,3,"Nothing remarkable either way, just a normal fuel stop.",2026-06-02
+r_006_013,st_006,3,"Okay experience overall, nothing to complain about.",2026-06-30
+r_007_001,st_007,2,Overall disappointing experience.,2024-09-16
+r_007_024,st_007,2,"Standard Shell station, does the job.",2024-09-16
+r_007_023,st_007,4,Loved how clean and fresh everything smelled inside.,2024-10-08
+r_007_007,st_007,5,Quick service even during rush hour.,2024-10-26
+r_007_021,st_007,5,"No queue at all, in and out in minutes.",2024-10-29
+r_007_009,st_007,4,"Solid experience, will come back again. One of the better fuel stops in London.",2024-11-02
+r_007_004,st_007,4,"Convenient and reliable, always a good stop. Convenient and reliable, always a good stop.",2025-01-27
+r_007_022,st_007,5,"Great Shell station overall, would recommend.",2025-01-28
+r_007_011,st_007,4,One of the better fuel stops in London.,2025-02-21
+r_007_026,st_007,3,"Average petrol station, nothing special.",2025-03-17
+r_007_017,st_007,3,"Okay experience overall, nothing to complain about.",2025-03-24
+r_007_010,st_007,2,Paid for a wash that didn't even start.,2025-03-27
+r_007_027,st_007,4,Fuel prices were fair compared to nearby stations.,2025-04-08
+r_007_014,st_007,5,"Solid experience, will come back again.",2025-04-29
+r_007_015,st_007,5,Prices are competitive for the area.,2025-05-22
+r_007_028,st_007,1,"Felt unsafe at night, poor lighting and loitering.",2025-06-08
+r_007_025,st_007,5,One of the better fuel stops in London.,2025-07-25
+r_007_003,st_007,5,"Convenient and reliable, always a good stop.",2025-09-06
+r_007_006,st_007,4,"Standard Shell station, does the job.",2025-09-21
+r_007_012,st_007,5,Toilets were clean with soap and paper available.,2025-11-06
+r_007_005,st_007,4,One of the better fuel stops in London. One of the better fuel stops in London.,2025-12-13
+r_007_008,st_007,4,It's fine for a quick stop.,2026-02-01
+r_007_002,st_007,2,Charging point out of service for weeks.,2026-02-26
+r_007_013,st_007,5,"Convenient and reliable, always a good stop.",2026-03-15
+r_007_019,st_007,5,"Car wash left my car spotless. Solid experience, will come back again.",2026-03-18
+r_007_018,st_007,4,"Served straight away, no queue at the till. Convenient and reliable, always a good stop.",2026-04-30
+r_007_016,st_007,5,"Bathroom was tidy and well stocked. Convenient and reliable, always a good stop.",2026-06-22
+r_007_020,st_007,3,"Standard Shell station, does the job.",2026-07-04
+r_007_037,st_007,2,"Average petrol station, nothing special.",2026-07-30
+r_007_038,st_007,1,Charging point out of service for weeks.,2026-07-30
+r_007_040,st_007,1,"Both chargers were broken, wasted a trip.",2026-07-30
+r_007_035,st_007,1,Charging point out of service for weeks.,2026-07-31
+r_007_039,st_007,1,"Both chargers were broken, wasted a trip. Would not recommend this Shell station.",2026-07-31
+r_007_042,st_007,2,Rapid charger never seems to work when I need it.,2026-08-01
+r_007_031,st_007,3,"Okay experience overall, nothing to complain about.",2026-08-05
+r_007_029,st_007,4,"Average petrol station, nothing special.",2026-08-08
+r_007_030,st_007,1,Rapid charger never seems to work when I need it.,2026-08-09
+r_007_034,st_007,1,Rapid charger never seems to work when I need it.,2026-08-09
+r_007_033,st_007,1,"Both chargers were broken, wasted a trip. Overall disappointing experience.",2026-08-11
+r_007_032,st_007,2,"Both chargers were broken, wasted a trip.",2026-08-14
+r_007_041,st_007,2,Rapid charger never seems to work when I need it.,2026-08-15
+r_007_036,st_007,1,Rapid charger never seems to work when I need it.,2026-08-18
+r_008_020,st_008,1,"Only one till open, queue went out the door. Below average, expected better.",2024-09-12
+r_008_003,st_008,2,"Massive queue, waited over 15 minutes to pay.",2024-10-07
+r_008_008,st_008,2,Car wash was broken and out of order. Won't be coming back to this station.,2024-10-19
+r_008_009,st_008,2,"Extremely slow service, long line at the till.",2024-11-18
+r_008_004,st_008,5,"Car wash machine worked great, highly recommend.",2024-11-23
+r_008_016,st_008,3,"Nothing remarkable either way, just a normal fuel stop.",2024-12-22
+r_008_024,st_008,2,"Only one till open, queue went out the door. Would not recommend this Shell station.",2025-02-25
+r_008_012,st_008,4,"Line moved fast, no waiting around.",2025-03-28
+r_008_019,st_008,3,It's fine for a quick stop.,2025-04-01
+r_008_022,st_008,1,"Only one till open, queue went out the door.",2025-04-07
+r_008_017,st_008,2,"Both chargers were broken, wasted a trip. Would not recommend this Shell station.",2025-04-18
+r_008_005,st_008,5,Rapid charger was available and easy to use.,2025-04-30
+r_008_013,st_008,1,"Massive queue, waited over 15 minutes to pay.",2025-05-16
+r_008_001,st_008,5,Quick service even during rush hour.,2025-06-11
+r_008_010,st_008,4,"Nothing remarkable either way, just a normal fuel stop.",2025-08-19
+r_008_018,st_008,1,"Extremely slow service, long line at the till.",2025-09-13
+r_008_014,st_008,2,"Way too crowded, waiting forever just to pay.",2025-09-17
+r_008_007,st_008,3,"Standard Shell station, does the job.",2025-10-12
+r_008_006,st_008,5,"Really helpful staff, went out of their way to assist. Convenient and reliable, always a good stop.",2025-10-20
+r_008_002,st_008,2,"Only one till open, queue went out the door. Won't be coming back to this station.",2025-10-24
+r_008_021,st_008,2,Paid for a wash that didn't even start. Overall disappointing experience.,2025-11-14
+r_008_011,st_008,3,"Standard Shell station, does the job.",2025-12-27
+r_008_015,st_008,2,Car wash machine jammed halfway through.,2026-01-23
+r_008_023,st_008,1,"Only one till open, queue went out the door.",2026-01-29
+r_008_034,st_008,5,Reasonable prices for London.,2026-02-24
+r_008_041,st_008,3,"Standard Shell station, does the job.",2026-02-24
+r_008_033,st_008,5,"Line moved fast, no waiting around.",2026-02-28
+r_008_037,st_008,1,EV charger was broken again.,2026-03-16
+r_008_038,st_008,4,Loo was clean and well maintained.,2026-03-29
+r_008_045,st_008,5,Quick service even during rush hour. One of the better fuel stops in London.,2026-03-29
+r_008_047,st_008,1,"Only one till open, queue went out the door.",2026-04-01
+r_008_039,st_008,4,"Line moved fast, no waiting around.",2026-04-05
+r_008_030,st_008,5,Bathroom was tidy and well stocked.,2026-04-09
+r_008_029,st_008,5,"No queue at all, in and out in minutes. Convenient and reliable, always a good stop.",2026-04-11
+r_008_032,st_008,5,Prices are competitive for the area.,2026-04-11
+r_008_044,st_008,4,The cashier was polite and quick.,2026-04-28
+r_008_025,st_008,5,"Line moved fast, no waiting around.",2026-05-01
+r_008_026,st_008,5,"Good value, not overpriced at all. Solid experience, will come back again.",2026-05-09
+r_008_043,st_008,1,Fuel prices are a total rip off here. Would not recommend this Shell station.,2026-05-23
+r_008_048,st_008,4,Car wash left my car spotless.,2026-06-07
+r_008_027,st_008,2,"Average petrol station, nothing special.",2026-06-09
+r_008_042,st_008,5,Loo was clean and well maintained.,2026-06-10
+r_008_040,st_008,5,"Line moved fast, no waiting around.",2026-06-17
+r_008_035,st_008,4,Vacuum and car wash both worked well. One of the better fuel stops in London.,2026-07-07
+r_008_031,st_008,5,"Car wash machine worked great, highly recommend.",2026-07-09
+r_008_036,st_008,5,"Served straight away, no queue at the till. One of the better fuel stops in London.",2026-07-22
+r_008_028,st_008,4,"Good value, not overpriced at all.",2026-07-26
+r_008_046,st_008,4,"Served straight away, no queue at the till. One of the better fuel stops in London.",2026-08-06
+r_009_022,st_009,1,Overall disappointing experience.,2024-09-19
+r_009_004,st_009,3,"Nothing remarkable either way, just a normal fuel stop.",2024-11-01
+r_009_014,st_009,1,Car wash machine jammed halfway through. Would not recommend this Shell station.,2024-12-17
+r_009_010,st_009,5,Fuel prices were fair compared to nearby stations.,2025-01-10
+r_009_003,st_009,3,"Standard Shell station, does the job.",2025-01-15
+r_009_013,st_009,2,Overall disappointing experience.,2025-02-03
+r_009_015,st_009,1,"Extremely slow service, long line at the till.",2025-02-05
+r_009_002,st_009,4,"Convenient and reliable, always a good stop.",2025-03-30
+r_009_017,st_009,4,"Always tidy, staff clearly keep on top of cleaning.",2025-05-12
+r_009_027,st_009,3,"Average petrol station, nothing special.",2025-05-19
+r_009_007,st_009,1,Attendant was rude when I asked a simple question.,2025-06-30
+r_009_021,st_009,3,"Okay experience overall, nothing to complain about.",2025-07-24
+r_009_019,st_009,1,Forecourt was filthy and messy with rubbish everywhere.,2025-09-01
+r_009_006,st_009,2,Way too expensive compared to other stations nearby.,2025-09-08
+r_009_024,st_009,3,"Okay experience overall, nothing to complain about.",2025-10-18
+r_009_012,st_009,5,"Served straight away, no queue at the till. Convenient and reliable, always a good stop.",2025-10-21
+r_009_020,st_009,3,"Okay experience overall, nothing to complain about.",2025-10-30
+r_009_009,st_009,3,"Standard Shell station, does the job.",2025-12-21
+r_009_025,st_009,5,"Good security presence, felt safe.",2025-12-27
+r_009_005,st_009,1,Car wash machine jammed halfway through.,2026-02-03
+r_009_023,st_009,2,"Extremely slow service, long line at the till.",2026-02-18
+r_009_011,st_009,3,"Average petrol station, nothing special.",2026-03-09
+r_009_008,st_009,3,"Average petrol station, nothing special.",2026-03-29
+r_009_016,st_009,2,"Below average, expected better. Below average, expected better.",2026-04-22
+r_009_026,st_009,5,"Really clean store, no complaints there. Great Shell station overall, would recommend.",2026-04-26
+r_009_028,st_009,2,"Average petrol station, nothing special.",2026-07-05
+r_009_001,st_009,1,"Massive queue, waited over 15 minutes to pay.",2026-07-12
+r_009_018,st_009,4,One of the better fuel stops in London.,2026-07-28
+r_010_015,st_010,1,Restroom smelled awful and was not maintained.,2025-11-01
+r_010_003,st_010,1,Overall disappointing experience.,2025-11-07
+r_010_004,st_010,5,Great to see working EV charging points here.,2025-12-09
+r_010_012,st_010,5,"Vacuum and car wash both worked well. Solid experience, will come back again.",2026-02-17
+r_010_002,st_010,4,One of the better fuel stops in London.,2026-03-08
+r_010_013,st_010,1,EV charger was broken again.,2026-03-09
+r_010_005,st_010,4,"Solid experience, will come back again. One of the better fuel stops in London.",2026-03-19
+r_010_001,st_010,5,"Convenient and reliable, always a good stop.",2026-03-24
+r_010_011,st_010,5,Restroom was surprisingly clean for a petrol station.,2026-05-07
+r_010_014,st_010,4,"Great to see working EV charging points here. Convenient and reliable, always a good stop.",2026-06-06
+r_010_006,st_010,2,"Below average, expected better.",2026-06-07
+r_010_007,st_010,5,Toilets were clean with soap and paper available.,2026-06-12
+r_010_008,st_010,3,"Average petrol station, nothing special.",2026-07-03
+r_010_009,st_010,1,"Prices keep climbing, feels like a ripoff now. Won't be coming back to this station.",2026-07-30
+r_010_010,st_010,5,"Really helpful staff, went out of their way to assist.",2026-08-12
+r_011_004,st_011,4,Charging point was free and worked first time.,2024-09-22
+r_011_006,st_011,2,It's fine for a quick stop.,2024-09-25
+r_011_001,st_011,4,"Loved how clean and fresh everything smelled inside. Solid experience, will come back again.",2024-10-07
+r_011_013,st_011,5,Loved how clean and fresh everything smelled inside.,2024-10-23
+r_011_005,st_011,4,Loved how clean and fresh everything smelled inside.,2024-12-27
+r_011_015,st_011,2,Bathroom was filthy and out of order.,2025-01-10
+r_011_008,st_011,5,"Always tidy, staff clearly keep on top of cleaning.",2025-01-11
+r_011_016,st_011,5,The forecourt was spotless and well maintained.,2025-03-19
+r_011_009,st_011,5,The forecourt was spotless and well maintained.,2025-07-05
+r_011_007,st_011,4,Restroom was surprisingly clean for a petrol station.,2025-11-15
+r_011_012,st_011,3,It's fine for a quick stop.,2025-11-16
+r_011_011,st_011,5,"Car wash machine worked great, highly recommend.",2025-11-29
+r_011_002,st_011,5,The forecourt was spotless and well maintained.,2025-12-23
+r_011_014,st_011,5,The forecourt was spotless and well maintained.,2026-01-19
+r_011_010,st_011,5,"Loo was clean and well maintained. Great Shell station overall, would recommend.",2026-01-20
+r_011_003,st_011,4,"Really clean store, no complaints there. One of the better fuel stops in London.",2026-02-15
+r_011_031,st_011,1,Bins overflowing and the whole place felt grimy.,2026-02-23
+r_011_032,st_011,1,"Jet wash barely worked, waste of money.",2026-02-23
+r_011_018,st_011,1,"Terrible customer service, felt ignored the whole time.",2026-03-20
+r_011_027,st_011,1,"Poor hygiene, definitely needs a proper clean.",2026-04-15
+r_011_033,st_011,2,"Extremely slow service, long line at the till.",2026-05-11
+r_011_030,st_011,2,"Store was dirty, sticky floors and a bad smell.",2026-05-27
+r_011_019,st_011,2,Witnessed some threatening behaviour near the pumps.,2026-06-22
+r_011_026,st_011,3,"Standard Shell station, does the job.",2026-07-07
+r_011_022,st_011,1,Security is a concern here after dark.,2026-07-23
+r_011_029,st_011,2,Bins overflowing and the whole place felt grimy.,2026-07-23
+r_011_024,st_011,1,"Paid for a wash that didn't even start. Below average, expected better.",2026-07-27
+r_011_023,st_011,1,Bins overflowing and the whole place felt grimy. Would not recommend this Shell station.,2026-07-28
+r_011_020,st_011,3,It's fine for a quick stop.,2026-07-29
+r_011_021,st_011,1,"Store was dirty, sticky floors and a bad smell.",2026-07-29
+r_011_025,st_011,3,It's fine for a quick stop.,2026-07-29
+r_011_028,st_011,1,"Both chargers were broken, wasted a trip.",2026-07-31
+r_011_017,st_011,2,Forecourt was filthy and messy with rubbish everywhere.,2026-08-06
+r_012_004,st_012,5,Toilets were clean with soap and paper available. One of the better fuel stops in London.,2024-09-10
+r_012_007,st_012,4,Toilets were clean with soap and paper available.,2024-09-23
+r_012_011,st_012,3,It's fine for a quick stop.,2024-09-25
+r_012_016,st_012,5,EV charger worked perfectly and charged fast.,2024-11-03
+r_012_017,st_012,4,"Felt very safe filling up here, well lit at night.",2024-11-25
+r_012_012,st_012,5,Jet wash was powerful and good value.,2025-01-31
+r_012_015,st_012,5,"Car wash left my car spotless. Solid experience, will come back again.",2025-02-16
+r_012_024,st_012,5,Great customer service from the attendant on duty.,2025-03-30
+r_012_001,st_012,2,"Felt unsafe at night, poor lighting and loitering.",2025-05-04
+r_012_002,st_012,5,"Good security presence, felt safe. One of the better fuel stops in London.",2025-06-27
+r_012_022,st_012,5,"Vacuum and car wash both worked well. Great Shell station overall, would recommend.",2025-06-27
+r_012_019,st_012,4,Quick service even during rush hour.,2025-07-23
+r_012_003,st_012,5,"Solid experience, will come back again.",2025-07-29
+r_012_025,st_012,5,"Solid experience, will come back again.",2025-08-09
+r_012_005,st_012,5,Great to see working EV charging points here.,2025-08-21
+r_012_020,st_012,3,"Average petrol station, nothing special.",2025-10-01
+r_012_018,st_012,4,"Served straight away, no queue at the till.",2025-12-18
+r_012_023,st_012,5,"Good security presence, felt safe.",2026-01-06
+r_012_009,st_012,5,"Really helpful staff, went out of their way to assist.",2026-01-20
+r_012_021,st_012,3,"Nothing remarkable either way, just a normal fuel stop.",2026-02-01
+r_012_013,st_012,5,"Really clean store, no complaints there.",2026-02-10
+r_012_008,st_012,4,One of the better fuel stops in London.,2026-05-24
+r_012_010,st_012,5,"Great Shell station overall, would recommend. Convenient and reliable, always a good stop.",2026-06-12
+r_012_006,st_012,5,Prices are competitive for the area.,2026-08-09
+r_012_014,st_012,2,"Nothing remarkable either way, just a normal fuel stop.",2026-08-15
+r_013_012,st_013,2,"Below average, expected better. Below average, expected better.",2024-10-08
+r_013_023,st_013,1,Would not recommend this Shell station.,2024-11-27
+r_013_005,st_013,5,"Restroom was surprisingly clean for a petrol station. Convenient and reliable, always a good stop.",2025-02-20
+r_013_006,st_013,2,Cashier was dismissive and unfriendly.,2025-03-11
+r_013_013,st_013,4,"Convenient and reliable, always a good stop.",2025-03-31
+r_013_014,st_013,1,"Would not recommend this Shell station. Below average, expected better.",2025-04-10
+r_013_004,st_013,5,Reasonable prices for London.,2025-06-07
+r_013_020,st_013,1,"Prices keep climbing, feels like a ripoff now. Would not recommend this Shell station.",2025-06-13
+r_013_029,st_013,4,"Car wash left my car spotless. Great Shell station overall, would recommend.",2025-06-15
+r_013_017,st_013,2,Bins overflowing and the whole place felt grimy.,2025-08-04
+r_013_021,st_013,2,"Extremely slow service, long line at the till. Would not recommend this Shell station.",2025-08-08
+r_013_026,st_013,5,"Prices are competitive for the area. Great Shell station overall, would recommend.",2025-10-15
+r_013_010,st_013,1,"Below average, expected better.",2025-11-08
+r_013_009,st_013,3,"Average petrol station, nothing special.",2025-11-17
+r_013_002,st_013,4,"Solid experience, will come back again.",2025-11-23
+r_013_025,st_013,5,"Felt very safe filling up here, well lit at night.",2025-12-09
+r_013_027,st_013,2,"Nothing remarkable either way, just a normal fuel stop.",2025-12-17
+r_013_003,st_013,5,"Convenient and reliable, always a good stop.",2025-12-20
+r_013_018,st_013,3,"Average petrol station, nothing special.",2025-12-23
+r_013_030,st_013,5,Great to see working EV charging points here.,2026-01-11
+r_013_022,st_013,4,It's fine for a quick stop.,2026-03-04
+r_013_015,st_013,4,It's fine for a quick stop.,2026-03-11
+r_013_008,st_013,2,"Below average, expected better.",2026-03-23
+r_013_016,st_013,1,"Felt unsafe at night, poor lighting and loitering.",2026-04-06
+r_013_024,st_013,3,"Standard Shell station, does the job.",2026-04-15
+r_013_001,st_013,1,Overpriced for what you get.,2026-05-07
+r_013_019,st_013,5,"Car wash left my car spotless. Convenient and reliable, always a good stop.",2026-06-01
+r_013_007,st_013,1,Overall disappointing experience.,2026-06-20
+r_013_028,st_013,2,Overall disappointing experience.,2026-08-07
+r_013_011,st_013,1,Would not recommend this Shell station.,2026-08-17
+r_014_017,st_014,5,"Convenient and reliable, always a good stop. One of the better fuel stops in London.",2024-09-15
+r_014_011,st_014,5,"Great to see working EV charging points here. Great Shell station overall, would recommend.",2024-09-17
+r_014_003,st_014,2,It's fine for a quick stop.,2024-09-23
+r_014_025,st_014,5,"Convenient and reliable, always a good stop. One of the better fuel stops in London.",2024-11-10
+r_014_009,st_014,4,"Average petrol station, nothing special.",2024-12-10
+r_014_014,st_014,4,"Never felt unsafe, well-lit forecourt even late at night.",2024-12-31
+r_014_016,st_014,4,"Great Shell station overall, would recommend.",2025-01-12
+r_014_019,st_014,4,"Solid experience, will come back again.",2025-02-03
+r_014_008,st_014,3,"Standard Shell station, does the job.",2025-02-24
+r_014_007,st_014,5,"Really helpful staff, went out of their way to assist.",2025-05-07
+r_014_001,st_014,5,"Line moved fast, no waiting around. Great Shell station overall, would recommend.",2025-05-21
+r_014_026,st_014,4,"Convenient and reliable, always a good stop.",2025-06-10
+r_014_015,st_014,4,"Reasonable prices for London. Solid experience, will come back again.",2025-07-08
+r_014_022,st_014,5,Reasonable prices for London.,2025-08-29
+r_014_006,st_014,4,"Felt very safe filling up here, well lit at night.",2025-10-28
+r_014_024,st_014,5,"Staff were incredibly friendly and helpful. Convenient and reliable, always a good stop.",2025-12-20
+r_014_002,st_014,2,Loo was locked and the one time open it was gross.,2025-12-24
+r_014_005,st_014,5,"Great Shell station overall, would recommend. Convenient and reliable, always a good stop.",2026-01-22
+r_014_023,st_014,5,"Loo was clean and well maintained. Convenient and reliable, always a good stop.",2026-02-11
+r_014_021,st_014,5,Loo was clean and well maintained.,2026-03-09
+r_014_012,st_014,5,"One of the better fuel stops in London. Great Shell station overall, would recommend.",2026-03-20
+r_014_020,st_014,5,"Solid experience, will come back again. Great Shell station overall, would recommend.",2026-04-14
+r_014_004,st_014,2,"Poor hygiene, definitely needs a proper clean.",2026-04-23
+r_014_013,st_014,3,"Standard Shell station, does the job.",2026-05-11
+r_014_018,st_014,2,"Felt unsafe at night, poor lighting and loitering. Overall disappointing experience.",2026-05-20
+r_014_010,st_014,5,"Rapid charger was available and easy to use. Great Shell station overall, would recommend.",2026-07-08
+r_014_030,st_014,3,"Average petrol station, nothing special.",2026-07-30
+r_014_038,st_014,3,"Nothing remarkable either way, just a normal fuel stop.",2026-07-30
+r_014_037,st_014,1,"Felt unsafe at night, poor lighting and loitering. Overall disappointing experience.",2026-08-02
+r_014_027,st_014,3,"Nothing remarkable either way, just a normal fuel stop.",2026-08-07
+r_014_034,st_014,1,"Felt scared walking to my car, no security around.",2026-08-07
+r_014_033,st_014,2,"Felt scared walking to my car, no security around. Below average, expected better.",2026-08-09
+r_014_031,st_014,2,"Average petrol station, nothing special.",2026-08-11
+r_014_028,st_014,1,"Felt unsafe at night, poor lighting and loitering.",2026-08-12
+r_014_035,st_014,3,"Standard Shell station, does the job.",2026-08-13
+r_014_036,st_014,1,Witnessed some threatening behaviour near the pumps.,2026-08-15
+r_014_032,st_014,1,"Felt scared walking to my car, no security around.",2026-08-17
+r_014_029,st_014,1,"Witnessed some threatening behaviour near the pumps. Below average, expected better.",2026-08-19
+r_015_007,st_015,4,Bathroom was tidy and well stocked.,2024-09-04
+r_015_015,st_015,5,"Always tidy, staff clearly keep on top of cleaning.",2024-09-13
+r_015_022,st_015,5,"Loved how clean and fresh everything smelled inside. Convenient and reliable, always a good stop.",2024-09-15
+r_015_018,st_015,4,"Solid experience, will come back again. One of the better fuel stops in London.",2024-10-02
+r_015_025,st_015,4,"One of the better fuel stops in London. Convenient and reliable, always a good stop.",2024-10-19
+r_015_014,st_015,5,"Convenient and reliable, always a good stop. One of the better fuel stops in London.",2024-10-24
+r_015_004,st_015,1,Would not recommend this Shell station. Overall disappointing experience.,2024-12-29
+r_015_027,st_015,4,"Loved how clean and fresh everything smelled inside. Great Shell station overall, would recommend.",2025-01-11
+r_015_016,st_015,4,Fuel prices were fair compared to nearby stations.,2025-01-15
+r_015_001,st_015,3,"Standard Shell station, does the job.",2025-02-09
+r_015_008,st_015,4,The forecourt was spotless and well maintained. One of the better fuel stops in London.,2025-04-02
+r_015_002,st_015,4,"Loo was clean and well maintained. Great Shell station overall, would recommend.",2025-04-10
+r_015_009,st_015,4,One of the better fuel stops in London.,2025-04-17
+r_015_006,st_015,5,"One of the better fuel stops in London. Convenient and reliable, always a good stop.",2025-07-18
+r_015_012,st_015,3,"Standard Shell station, does the job.",2025-08-02
+r_015_003,st_015,5,"Convenient and reliable, always a good stop. Solid experience, will come back again.",2026-01-07
+r_015_026,st_015,4,"Never felt unsafe, well-lit forecourt even late at night. Great Shell station overall, would recommend.",2026-02-06
+r_015_010,st_015,2,Won't be coming back to this station. Overall disappointing experience.,2026-02-19
+r_015_020,st_015,3,"Standard Shell station, does the job.",2026-03-02
+r_015_011,st_015,4,"Standard Shell station, does the job.",2026-03-27
+r_015_013,st_015,2,"Below average, expected better.",2026-04-02
+r_015_021,st_015,3,"Nothing remarkable either way, just a normal fuel stop.",2026-05-08
+r_015_024,st_015,5,"Solid experience, will come back again.",2026-05-16
+r_015_017,st_015,5,One of the better fuel stops in London.,2026-06-01
+r_015_023,st_015,5,One of the better fuel stops in London.,2026-06-05
+r_015_019,st_015,5,"Great Shell station overall, would recommend. Solid experience, will come back again.",2026-06-11
+r_015_005,st_015,3,"Nothing remarkable either way, just a normal fuel stop.",2026-06-23
+r_016_005,st_016,5,One of the better fuel stops in London.,2025-11-15
+r_016_006,st_016,4,Jet wash was powerful and good value.,2025-11-25
+r_016_001,st_016,5,"Line moved fast, no waiting around.",2025-12-17
+r_016_003,st_016,4,"Felt secure the whole time, staff keep an eye on things.",2026-02-05
+r_016_004,st_016,3,"Average petrol station, nothing special.",2026-04-04
+r_016_009,st_016,1,EV charger was broken again.,2026-05-03
+r_016_008,st_016,4,One of the better fuel stops in London.,2026-06-05
+r_016_010,st_016,1,Staff were rude and unhelpful.,2026-06-05
+r_016_002,st_016,4,"Car wash machine worked great, highly recommend. Solid experience, will come back again.",2026-06-21
+r_016_007,st_016,3,"Nothing remarkable either way, just a normal fuel stop.",2026-08-02
+r_017_006,st_017,3,"Standard Shell station, does the job.",2024-09-21
+r_017_005,st_017,2,"Store was dirty, sticky floors and a bad smell. Overall disappointing experience.",2024-10-18
+r_017_023,st_017,3,"Average petrol station, nothing special.",2024-12-19
+r_017_003,st_017,3,"Average petrol station, nothing special.",2024-12-25
+r_017_012,st_017,4,"Good security presence, felt safe.",2025-03-01
+r_017_002,st_017,2,It's fine for a quick stop.,2025-03-02
+r_017_025,st_017,3,"Nothing remarkable either way, just a normal fuel stop.",2025-03-08
+r_017_029,st_017,1,"Witnessed some threatening behaviour near the pumps. Below average, expected better.",2025-03-18
+r_017_014,st_017,2,"Forecourt was filthy and messy with rubbish everywhere. Below average, expected better.",2025-05-01
+r_017_036,st_017,2,Staff were rude and unhelpful.,2025-05-08
+r_017_039,st_017,2,"Felt unsafe at night, poor lighting and loitering. Overall disappointing experience.",2025-07-02
+r_017_022,st_017,3,"Standard Shell station, does the job.",2025-07-09
+r_017_011,st_017,4,"Good security presence, felt safe. Solid experience, will come back again.",2025-08-02
+r_017_021,st_017,2,Security is a concern here after dark.,2025-08-27
+r_017_024,st_017,4,"Car wash machine worked great, highly recommend. Convenient and reliable, always a good stop.",2025-09-09
+r_017_031,st_017,3,It's fine for a quick stop.,2025-09-10
+r_017_001,st_017,5,"Felt very safe filling up here, well lit at night.",2025-09-20
+r_017_026,st_017,4,"Okay experience overall, nothing to complain about.",2025-09-26
+r_017_032,st_017,1,"Way too crowded, waiting forever just to pay.",2025-10-09
+r_017_020,st_017,4,"Okay experience overall, nothing to complain about.",2025-10-11
+r_017_008,st_017,1,Car wash was broken and out of order.,2025-10-13
+r_017_009,st_017,5,"Never felt unsafe, well-lit forecourt even late at night. Solid experience, will come back again.",2025-10-16
+r_017_018,st_017,3,"Average petrol station, nothing special.",2025-11-17
+r_017_027,st_017,5,"Felt very safe filling up here, well lit at night.",2025-11-27
+r_017_016,st_017,3,"Average petrol station, nothing special.",2025-11-28
+r_017_030,st_017,4,It's fine for a quick stop.,2025-11-28
+r_017_028,st_017,2,"Both chargers were broken, wasted a trip.",2026-02-06
+r_017_015,st_017,5,"Never felt unsafe, well-lit forecourt even late at night.",2026-02-19
+r_017_037,st_017,2,"Felt scared walking to my car, no security around. Overall disappointing experience.",2026-02-19
+r_017_017,st_017,5,The cashier was polite and quick.,2026-03-06
+r_017_038,st_017,2,"Store was dirty, sticky floors and a bad smell.",2026-03-10
+r_017_035,st_017,2,"Felt scared walking to my car, no security around.",2026-03-18
+r_017_019,st_017,3,It's fine for a quick stop.,2026-04-06
+r_017_034,st_017,5,"Never felt unsafe, well-lit forecourt even late at night.",2026-04-19
+r_017_033,st_017,1,"Toilets were disgusting, no soap or paper.",2026-04-21
+r_017_004,st_017,3,"Okay experience overall, nothing to complain about.",2026-05-08
+r_017_010,st_017,2,"Felt scared walking to my car, no security around.",2026-05-20
+r_017_013,st_017,1,Security is a concern here after dark.,2026-06-21
+r_017_007,st_017,3,"Average petrol station, nothing special.",2026-06-30
+r_017_040,st_017,5,"Bathroom was tidy and well stocked. Great Shell station overall, would recommend.",2026-08-05
+r_018_009,st_018,2,"Nothing remarkable either way, just a normal fuel stop.",2024-12-20
+r_018_011,st_018,3,"Okay experience overall, nothing to complain about.",2025-05-28
+r_018_001,st_018,1,"Extremely slow service, long line at the till. Won't be coming back to this station.",2025-06-12
+r_018_004,st_018,3,"Average petrol station, nothing special.",2025-07-07
+r_018_005,st_018,2,EV charger was broken again.,2025-09-01
+r_018_003,st_018,1,"Extremely slow service, long line at the till. Below average, expected better.",2025-10-07
+r_018_007,st_018,1,Car wash machine jammed halfway through.,2025-10-26
+r_018_010,st_018,3,"Nothing remarkable either way, just a normal fuel stop.",2025-10-28
+r_018_013,st_018,5,"Loo was clean and well maintained. Great Shell station overall, would recommend.",2025-11-22
+r_018_006,st_018,1,Car wash was broken and out of order.,2026-01-03
+r_018_002,st_018,2,Car wash machine jammed halfway through.,2026-01-06
+r_018_012,st_018,1,Loo was locked and the one time open it was gross.,2026-01-12
+r_018_008,st_018,2,Restroom smelled awful and was not maintained.,2026-02-12
+r_018_024,st_018,2,"Nothing remarkable either way, just a normal fuel stop.",2026-03-01
+r_018_025,st_018,2,"Okay experience overall, nothing to complain about.",2026-03-03
+r_018_022,st_018,5,Rapid charger was available and easy to use.,2026-03-16
+r_018_026,st_018,3,It's fine for a quick stop.,2026-03-30
+r_018_015,st_018,2,Paid for a wash that didn't even start. Overall disappointing experience.,2026-04-25
+r_018_020,st_018,4,"Really clean store, no complaints there.",2026-05-04
+r_018_023,st_018,5,"Car wash machine worked great, highly recommend. One of the better fuel stops in London.",2026-05-06
+r_018_019,st_018,5,Vacuum and car wash both worked well.,2026-05-09
+r_018_016,st_018,4,"Fuel prices were fair compared to nearby stations. Great Shell station overall, would recommend.",2026-06-06
+r_018_018,st_018,3,"Standard Shell station, does the job.",2026-06-12
+r_018_021,st_018,5,"Prices are competitive for the area. Solid experience, will come back again.",2026-07-10
+r_018_017,st_018,5,"Car wash machine worked great, highly recommend.",2026-07-15
+r_018_014,st_018,3,"Standard Shell station, does the job.",2026-07-31

@@ -16,6 +16,14 @@ st.sidebar.header("Filters")
 time_window_days = st.sidebar.selectbox("Time window", [30, 90, 365], index=1)
 min_reviews = st.sidebar.slider("Minimum review count", 0, 200, 0, 5)
 rating_range = st.sidebar.slider("Avg rating range", 1.0, 5.0, (1.0, 5.0), 0.1)
+sentiment_filter = st.sidebar.multiselect(
+    "Sentiment category (dominant)",
+    ["positive", "neutral", "negative"],
+    default=["positive", "neutral", "negative"],
+)
+
+regions = ["All"] + sorted(stations["region"].dropna().unique().tolist())
+region_filter = st.sidebar.selectbox("Area (East/West/Central)", regions, index=0)
 
 boroughs = ["All"] + sorted(stations["borough"].dropna().unique().tolist())
 borough_filter = st.sidebar.selectbox("Borough", boroughs, index=0)
@@ -28,15 +36,28 @@ reviews_window = reviews_enriched[reviews_enriched["review_date"] >= cutoff].cop
 # Compute station metrics
 stations_view = compute_station_metrics(stations, reviews_window)
 
+
+def dominant_sentiment(row):
+    counts = {"positive": row["pos_count"], "neutral": row["neu_count"], "negative": row["neg_count"]}
+    if max(counts.values()) == 0:
+        return "neutral"
+    return max(counts, key=counts.get)
+
+
+stations_view["dominant_sentiment"] = stations_view.apply(dominant_sentiment, axis=1)
+
 # Apply station-level filters
 filtered = stations_view.copy()
+if region_filter != "All":
+    filtered = filtered[filtered["region"] == region_filter]
 if borough_filter != "All":
     filtered = filtered[filtered["borough"] == borough_filter]
 
 filtered = filtered[
     (filtered["review_count"] >= min_reviews) &
     (filtered["avg_rating"] >= rating_range[0]) &
-    (filtered["avg_rating"] <= rating_range[1])
+    (filtered["avg_rating"] <= rating_range[1]) &
+    (filtered["dominant_sentiment"].isin(sentiment_filter))
 ].copy()
 
 st.write(f"Showing **{len(filtered)}** stations")
@@ -109,12 +130,30 @@ st.caption(f"Time window: last {time_window_days} days (based on latest review d
 
 view_state = pdk.ViewState(latitude=51.5072, longitude=-0.1276, zoom=10)
 
+
+def pin_color(row):
+    if row["review_count"] == 0:
+        return [156, 163, 175, 200]  # gray - no data in window
+    if row["avg_rating"] >= 4.0:
+        return [22, 163, 74, 200]  # green
+    if row["avg_rating"] >= 3.0:
+        return [245, 158, 11, 200]  # amber
+    return [220, 38, 38, 200]  # red
+
+
+map_data = filtered.copy()
+map_data["color"] = map_data.apply(pin_color, axis=1)
+
 layer = pdk.Layer(
     "ScatterplotLayer",
-    data=filtered,
+    data=map_data,
     get_position=["lon", "lat"],
-    get_radius=8,
-    radius_units="pixels",
+    get_radius=120,
+    radius_min_pixels=6,
+    radius_max_pixels=18,
+    get_fill_color="color",
+    get_line_color=[255, 255, 255],
+    line_width_min_pixels=1,
     pickable=True,
     auto_highlight=True,
 )
@@ -125,14 +164,18 @@ tooltip = {
         "Avg rating: {avg_rating_display}\n"
         "Reviews: {review_count_display}\n"
         "Negative %: {neg_pct_display}\n"
-        "Borough: {borough}"
+        "Borough: {borough} ({region})"
     )
 }
 
 CARTO_POSITRON = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
 deck = pdk.Deck(map_style=CARTO_POSITRON, initial_view_state=view_state, layers=[layer], tooltip=tooltip)
 st.pydeck_chart(deck, use_container_width=True)
+st.caption("🟢 avg rating ≥ 4.0   🟠 3.0–3.9   🔴 < 3.0   ⚪ no reviews in this window")
 
 # Table
 st.subheader("Station summary")
-st.dataframe(filtered[["name", "borough", "avg_rating", "review_count", "neg_pct_display"]], use_container_width=True)
+st.dataframe(
+    filtered[["name", "region", "borough", "avg_rating", "review_count", "neg_pct_display", "dominant_sentiment"]],
+    use_container_width=True,
+)

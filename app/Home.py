@@ -2,7 +2,8 @@ import pandas as pd
 import streamlit as st
 
 from utils import (
-    load_data, enrich_reviews, compute_station_metrics, compute_overall_summary, top_themes_from
+    load_data, enrich_reviews, compute_station_metrics, compute_overall_summary, top_themes_from,
+    theme_deltas, detect_spikes
 )
 
 st.set_page_config(page_title="Shell London Reviews", layout="wide")
@@ -79,6 +80,48 @@ with t2:
     st.metric("Negative % change", f"{round(delta_neg*100):+.0f}%")
 with t3:
     st.metric("Prior period reviews", prev["reviews"])
+
+st.write("### Rising / falling themes vs prior period")
+neg_window = reviews_window[reviews_window["sentiment_label"] == "negative"]
+neg_prior = reviews_prior[reviews_prior["sentiment_label"] == "negative"]
+pos_window = reviews_window[reviews_window["sentiment_label"] == "positive"]
+pos_prior = reviews_prior[reviews_prior["sentiment_label"] == "positive"]
+
+complaint_deltas = theme_deltas(neg_window, neg_prior)
+praise_deltas = theme_deltas(pos_window, pos_prior)
+
+rC, rD = st.columns(2)
+with rC:
+    st.markdown("**Rising complaints** (negative mentions, current vs prior period)")
+    rising_complaints = complaint_deltas[complaint_deltas["delta"] > 0]
+    if rising_complaints.empty:
+        st.caption("No themes showing a rise in complaints.")
+    else:
+        st.dataframe(rising_complaints, use_container_width=True, hide_index=True)
+
+with rD:
+    st.markdown("**Rising praise** (positive mentions, current vs prior period)")
+    rising_praise = praise_deltas[praise_deltas["delta"] > 0]
+    if rising_praise.empty:
+        st.caption("No themes showing a rise in praise.")
+    else:
+        st.dataframe(rising_praise, use_container_width=True, hide_index=True)
+
+st.write("### Notable spikes")
+spikes = detect_spikes(stations, reviews_enriched, max_date, spike_days=30, baseline_days=180)
+if spikes.empty:
+    st.caption("No stations show a sudden spike in negative reviews right now.")
+else:
+    show_spikes = spikes[["name", "borough", "top_theme", "spike_neg_count", "baseline_neg_count", "ratio"]].copy()
+    show_spikes["ratio"] = show_spikes["ratio"].apply(lambda x: "∞" if x == float("inf") else f"{x:.1f}x")
+    show_spikes = show_spikes.rename(columns={
+        "top_theme": "driven by",
+        "spike_neg_count": "negative reviews (last 30d)",
+        "baseline_neg_count": "negative reviews (prior 180d, per 30d)",
+        "ratio": "vs baseline",
+    })
+    st.dataframe(show_spikes, use_container_width=True, hide_index=True)
+    st.caption("Flagged when negative reviews in the last 30 days run well above the station's normal rate.")
 
 st.write("### Stations improving vs deteriorating")
 stations_cur = compute_station_metrics(stations, reviews_window)
